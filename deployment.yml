@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: nodedocker-deployment
+spec:
+  replicas: 2 #for number of replica(pods)
+  template:
+    metadata:
+      labels: 
+        app: nodedocker  
+    spec:     # pod specification
+      containers: 
+      - name: nodedocker
+        image: nodedocker:v1 # image we pushed
+        ports:
+        - containerPort: 3000
