@@ -22,19 +22,24 @@ app.get('/contact', function(req, res){
 
 app.post('/contact/send', function(req, res){
 	var transporter = nodemailer.createTransport({
-		service: 'Gmail',
+		host: 'smtp.gmail.com',
+		port: 465,
+    	secure: true, // use SSL
 		auth: {
-			user: ''//enter email you want to send mail from,
-			pass: ''//enter passsword
+			user: 'nodemailer007@gmail.com',//enter email you want to send mail from,
+			pass: 'qddvvqqirwegpjsu'//enter passsword
+		},
+		tls:{
+			rejectUnauthorized: false,
 		}
 	});
 
 	var mailOptions = {
-		from: 'Rishabh Bhandari <rishabhbhandari6@gmail.com>',
-		to: '',// enter the email id where you want to send email
+		from: '"Nodemailer Bot" <nodemailer007@gmail.com>',
+		to: req.body.email,
 		subject: 'Message from Nodemailer',
 		text: 'New Mail! Name: '+req.body.name+'Email: '+req.body.email+ 'Message: '+req.body.message,
-		html: '<p>New Mail!</p><ul><li>Name: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Message: '+req.body.message+'</li></ul>'
+		html: '<p>New Mail!</p><ul><li>'+req.body.message+'</li></ul>'
 	};
 
 	transporter.sendMail(mailOptions, function(error, info){

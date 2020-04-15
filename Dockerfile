@@ -1,4 +1,4 @@
-FROM stefanscherer/node-windows:7.6.0-nano
+FROM ubuntu
 WORKDIR /app
 #from where to where
 COPY package.json /app 
