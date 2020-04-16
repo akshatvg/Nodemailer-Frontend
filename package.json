@@ -4,12 +4,13 @@
   "description": "Simple website",
   "main": "app.js",
   "scripts": {
-    "start" : "node app.js"
+    "start": "node app.js"
   },
   "author": "Brad Traversy",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
     "jade": "*",
     "nodemailer": "^6.4.6"
