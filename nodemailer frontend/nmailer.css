@@ -1,0 +1,89 @@
+:root{
+    scroll-behavior: smooth;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --c1:#F5F4F1    ;
+    --c2:#DA7278;
+    --c3:#9E93B5;
+    --c4:#9C27B0;
+    --c5:#202039;
+}
+.c2{
+    background-color: var(--c2);
+}
+.shadow{
+    box-shadow: 10px 5px 10px ;
+}
+.rc{
+    border-radius: 5px;
+}
+.tc3{
+    color: var(--c3);
+}
+
+.c3{
+    background-color: var(--c3);
+}
+.text-c5{
+    color: var(--c5);
+}
+.c5{
+    background-color: var(--c5);
+}
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+                      linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                      radial-gradient(gray 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+    background-color: var(--c1);
+  }
+.a{
+    border: solid black 3px;
+    color: black;
+}
+
+
+.navbar-brand{
+    box-shadow: 10px 5px ;
+    letter-spacing: 0.3rem;
+}
+.navbar-brand:hover{
+}
+
+
+
+@media (max-width: 768px) {
+    .mh{
+        display:none;
+    }
+
+}
+.alert{
+    margin: 0.5rem 0rem;
+    min-width: 50%;
+}
+hr{
+    margin: 0;
+}
+h4{
+    margin: 0;
+}
+#contact{
+    margin: 0.5rem 0rem;
+}
+#icons{
+    margin: 0 auto;
+    width: 100%;
+    font-size: large;
+}
+.bmd-form-group{
+    padding-top: 20px;
+}
