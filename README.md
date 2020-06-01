@@ -35,20 +35,24 @@
 
 
 ## Screenshots
-<img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
+<img src="/screenshots/Screenshot 2020-06-02 at 1.07.35 AM.png" alt="Project Screenshots">
+<img src="/screenshots/Screenshot 2020-06-02 at 1.17.16 AM.png" alt="Project Screenshots">
+<img src="/screenshots/Screenshot 2020-06-02 at 1.18.07 AM.png" alt="Project Screenshots">
+<img src="/screenshots/Screenshot 2020-06-02 at 1.18.20 AM.png" alt="Project Screenshots">
 
 ## Instructions to run
 
 ```
-$ git clone https://github.com/CodeChefVIT/<Project>
+$ git clone https://github.com/CodeChefVIT/Nodemailer-Frontend
 $ cd <Project>
 $ pip3 install -r requirements.txt
 $ python3 manage.py runserver
 ```
 
 ## Contributors
-- <a href="https://github.com/<Contributor>">Contributor Name</a>
-- <a href="https://github.com/<Contributor>">Contributor Name</a>
+- <a href="https://github.com/akshatvg">Akshat Gupta</a>
+- <a href="https://github.com/RishabhKodes">Rishabh Bhandhari</a>
+- <a href="https://github.com/shashtag">Rishabh Bhandhari</a>
 
 ## License
 
