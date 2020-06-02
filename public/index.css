@@ -27,6 +27,7 @@ body{
     
 }
 .section{
+    overflow-y: hidden;
     padding: 1vh 0;
     height: 100vh;
     width: 100vw;
@@ -46,6 +47,9 @@ body{
     height: 11vmax;
     color: white;
     
+}
+.collapse:not(.show) {
+    display: block;
 }
 .mine-bg-green{
     background-color: green !important;
@@ -241,14 +245,14 @@ label{
     background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 textarea{
-    height: 20vh !important;
+    height: 28vh !important;
 }
 @media (min-width: 576px) {
     .jumbotron{
         height: 72vh;
     }
     textarea{
-        height: 25vh !important;
+        height: 35vh !important;
     }
 }
 #contact{
