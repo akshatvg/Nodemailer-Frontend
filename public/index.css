@@ -1,6 +1,4 @@
-.a{
-    border: white 2px solid;
-}
+
 :root{
     scroll-behavior: smooth;
     
@@ -68,6 +66,10 @@ body{
 }
 .nav-link{
     font-size: 3vh !important;
+}
+.nav-item:hover{
+    background-color: rgba(255,255,255,0.075);
+    border-radius: 5px;
 }
 .h1{
     padding: 0 0;
@@ -158,24 +160,24 @@ h3{
     position: relative;
 }
 .fp-controlArrow {
-    top: 30%;
+    top: 50%;
 }
 .fp-controlArrow.fp-prev {
     display: none;
-    left: -15px;
+    left: -30px;
     border-width: 5vh 4vh 5vh 0;
     border-color: transparent rgba(255,255,255,.4) transparent transparent;
 }
 .fp-controlArrow.fp-next {
     display: none;
-    right: -15px;
+    right: -30px;
     border-width: 5vh 0 5vh 4vh;
     border-color: transparent transparent transparent rgba(255,255,255,.4);
 }
 .card{
     margin-top: 0px;
     width: 98%;
-    max-height: 40vh;
+    height: 30vh;
     background-color: rgba(255,255,255,.1);
     color: white;
 }
