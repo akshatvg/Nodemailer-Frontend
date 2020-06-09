@@ -43,8 +43,8 @@
 ## Instructions to run
 
 ```
-$ git clone 
-$ cd 
+$ git clone https://github.com/CodeChefVIT/Nodemailer-Frontend.git
+$ cd Nodemailer-Frontend
 $ npm install
 $ node app.js
 ```
