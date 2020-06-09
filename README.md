@@ -7,7 +7,7 @@
 > Nodemailer is a module for Node.js applications to allow easy as cake email sending. The project got started back in 2010 when there was no sane option to send email messages, today it is the solution most Node.js users turn to by default.
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
+
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
 
 
@@ -43,16 +43,16 @@
 ## Instructions to run
 
 ```
-$ git clone https://github.com/CodeChefVIT/Nodemailer-Frontend
-$ cd <Project>
-$ pip3 install -r requirements.txt
-$ python3 manage.py runserver
+$ git clone 
+$ cd 
+$ npm install
+$ node app.js
 ```
 
 ## Contributors
 - <a href="https://github.com/akshatvg">Akshat Gupta</a>
 - <a href="https://github.com/RishabhKodes">Rishabh Bhandhari</a>
-- <a href="https://github.com/shashtag">Rishabh Bhandhari</a>
+- <a href="https://github.com/shashtag">Shashwat Gupta</a>
 
 ## License
 
