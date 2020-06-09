@@ -20,13 +20,16 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://kit.fontawesome.com/966d44bd01.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
+
     <div id="fullpage">
       <div class="section " id="landing" >
 
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark " data-aos="fade-down">
           <div class="container">
               <div class="navbar-translate">
                   <a class="navbar-brand " href="/presentation.html">Nodemailer</a>
@@ -60,13 +63,13 @@
         </nav>
         
         <div class="container">
-          <h1 class=" text-center h1" > Send <div class="text-nowrap d-inline">E-mails</div>  from Node.js <div> – </div> <div class="text-nowrap d-inline">Easy as cake!</div> </h1>
+          <h1 class=" text-center h1" data-aos="fade-down" data-aos-delay="400" > Send <div class="text-nowrap d-inline">E-mails</div>  from Node.js <div> – </div> <div class="text-nowrap d-inline">Easy as cake!</div> </h1>
           <div class="row">
-            <div class="col-12 col-md-5 offset-md-2 no-gutters">
-              <a href="#" class="btn-lg btn-block text-center mine-bg-green ">Send a Mail!</a>
+            <div class="col-12 col-lg-5 offset-lg-2 no-gutters" data-aos="fade-up" data-aos-delay="900" >
+              <a href="#Form" class="btn-lg btn-block text-center mine-bg-green ">Send a Mail!</a>
             </div>
-            <div class="col-12 col-md-3">
-              <a href="#" class="btn-lg btn-block text-center bg-transparent ">Know more</a>
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="1200" >
+              <a href="#About" class="btn-lg btn-block text-center bg-transparent ">Know more</a>
             </div>
           </div>
           
@@ -282,6 +285,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      disable: 'mobile',
+    });
+  </script>
   <script>
     new fullpage('#fullpage', {
       //options here
@@ -303,14 +313,7 @@
 
       
   </script>
-  <script>
-    var tl = gsap.timeline({defaults:{duration: 0.8}});
-        tl.from(".navbar",{y:-100,  opacity: 0} )
-          .from(".h1", {y:-100, opacity: 0}, "-=.4")
-          .from(".btn-lg", {y:50,stagger: 0.4, opacity: 0})
-          .from("#fp-nav",{x:50, opacity: 0}, "-=.4");
-                  
-  </script>
+
 
 
 </body>
