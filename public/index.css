@@ -43,6 +43,7 @@ body{
     color: white;
     
 }
+
 .collapse:not(.show) {
     display: block;
 }
