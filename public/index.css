@@ -36,6 +36,7 @@ body{
     background-blend-mode:multiply;
     color: white;
     padding: 5.5vh 0;
+    background-repeat: no-repeat;
 }
 
 .navbar{
@@ -141,11 +142,33 @@ h2{
     font-size: 6.5vmax;
     font-family: 'Zilla Slab' !important; 
     margin-bottom: 0;
-    margin-top: 0;
+    
+}
+.about-title{
+    margin-top: -10vh;
 }
 p{
+    
     font-size: 3.5vmax;
     line-height: 3.8vmax;
+}
+.ani1{
+    margin-top:10vh;
+}
+.animation{
+    display:block;
+    position:relative;
+}
+.animation:after {
+    content: ' ';
+    position: absolute;
+    top:5px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: white;
+    z-index: 1;
+    transform-origin: 100% 0;
 }
 h3{
     font-weight: 600;
@@ -178,6 +201,7 @@ h3{
     height: 30vh;
     background-color: rgba(255,255,255,.1);
     color: white;
+    margin-left:100vw;
 }
 @media (min-width: 576px) {
     #about{
