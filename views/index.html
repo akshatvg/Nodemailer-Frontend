@@ -89,7 +89,7 @@
           <p class="ani1"> <strong>Nodemailer</strong> is a module for Node.js applications to allow easy as cake email sending. 
             The project got started back in 2010 when there was no sane option to send email messages, today it is the 
             solution most Node.js users turn to by default.</p>
-          <h3> <div class="text-nowrap d-inline">Nodemailer features</div></h3>
+          <h3> <div class="text-nowrap d-inline "> <span class="ani2"> Nodemailer features </span></div></h3>
             <div class="mine-pos-rel ">
               <div class="slide" data-anchor="slide1">
                 <div class="card ">
@@ -303,12 +303,12 @@
      
       afterLoad: function(origin, destination, direction){
         var loadedSection = this;
+       
 
         //using index
         if(destination.index == 0){
         	var tl1 = gsap.timeline({defaults:{duration: 0.8}});
 
-          // tl.from(".navbar",{y:-100,  opacity: 0} )
             tl1.from("#landing",{duration:0.8, opacity: 0.9})
               .from(".h1", {y:-100, opacity: 0}, "-=.4")
               .from(".btn-lg", {y:50,stagger: 0.4, opacity: 0})
@@ -322,25 +322,27 @@
           var tl2 = gsap.timeline({defaults:{duration: 0.8}});
 
               tl2.to(".about-title", {y:"10vh", opacity: 1,ease: "bounce.out"}, "")
-                .to(".card",{duration: 1.6,x:"-99.3vw",ease:"elastic.out(1,0.75)"},"-=0.4")
-              
-        	
+                 .to(".card",{duration: 1.6,x:"-99.3vw",ease:"elastic.out(1,0.75)"},"-=0.4")
+                
+
         }
         if(destination.index == 2){
           var rule = CSSRulePlugin.getRule(".animation:after");
           var tl3 = gsap.timeline({defaults:{duration: 0.8}});
 
             tl3.to(rule, {cssRule: {scaleY: 0}} )
+              
 
         	
         }
 	    },
-      // onLeave: function(origin, destination, direction){
-      //   if(origin.index==0){
-      //     tl1.reversed() ? tl1.play() : tl1.reverse();
-      //   }
+      onLeave: function(origin, destination, direction){
+        if(origin.index==0){
+          // tl1.reversed() ? tl1.play() : tl1.reverse();
+          // tl1. reverse();
+        }
     
-      // }
+      },
 
     });
     
