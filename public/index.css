@@ -29,15 +29,17 @@ body{
 }
 
 #landing{
-    background-image: url(https://media.giphy.com/media/H6DkMICSYJndIm09kA/source.gif),
+    background-image: url("landing-bg.jpg"),
     linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));   
     background-size:cover;
-    background-position: center;
+    background-position: bottom;
     background-blend-mode:multiply;
     color: white;
     padding: 5.5vh 0;
     background-repeat: no-repeat;
+    position: relative;
 }
+
 
 .navbar{
     height: 11vmax;
@@ -51,9 +53,17 @@ body{
 .mine-bg-green{
     background-color: green !important;
 }
+.mine-bg-green:hover{
+    background-color: rgb(2, 170, 2) !important;
+
+}
 
 .bg-transparent{
     background-color: rgba(0,0,0,.4) !important;
+}
+.bg-transparent:hover{
+    background-color: rgba(255, 255, 255, 0.103) !important;
+
 }
 
 .navbar-brand {
@@ -73,9 +83,9 @@ body{
 .h1{
     padding: 0 0;
     font-weight: 600;
-    font-size: min(8.5vh,58px);
+    font-size: 8.5vh;
     font-family: 'Zilla Slab' !important; 
-    
+
     
 }
 .btn-lg{
@@ -85,19 +95,22 @@ body{
     margin-top: 2vh;
     padding: 3vh 0;
     color: white;
-    
 }
 a:hover, a:focus {
     color: white;
     text-decoration: none;
 }
-@media (min-width: 576px) {
+.btn-grp{
+    margin-bottom: 0;
+}
+@media (min-width: 576px), (min-height:576px) {
     .navbar{
         height: 9vmax;
     }
     h1{
-        
-        font-size: 9vh;
+        margin-top: 4vmax !important;
+        font-size: 9vh !important;
+        margin-bottom: 2vmax !important;
         
     }
     .navbar-brand {
@@ -113,15 +126,21 @@ a:hover, a:focus {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px),(min-height:768px) {
     
     h1{
-        padding: 2vh 0;
-        font-size: 9.5vh;
+        padding: 3vh 0;
+        
+        
     }
     
 }
-@media (min-width: 992px) {
+@media (min-width: 992px),(min-height:992px) {
+    h1{
+        margin-top: 5vmax !important;
+        font-size: 10vh !important;
+        margin-bottom: 2.5vmax !important;
+    }
     #fp-nav span{
         display: block;
     }
@@ -142,6 +161,7 @@ h2{
     font-size: 6.5vmax;
     font-family: 'Zilla Slab' !important; 
     margin-bottom: 0;
+    margin-top:-15px;
     
 }
 .about-title{
@@ -165,7 +185,7 @@ p{
     position: absolute;
     top:5px;
     left: 0;
-    width: 40vw;
+    width: 40vmax;
     height: 90%;
     background: white;
     z-index: 1;
@@ -244,7 +264,8 @@ h3{
     padding: 0 1rem 1vh 1rem;
     padding-top: 1vh;
 
-    height: 67vh;
+    height: 75vh;
+    margin-bottom: 0;
 }
 form{
     margin-bottom: 1vh;

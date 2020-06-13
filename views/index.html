@@ -27,11 +27,12 @@
 
     <div id="fullpage">
       <div class="section s1" id="landing" >
+        
 
         <nav class="navbar navbar-expand-lg bg-transparent navbar-dark " >
           <div class="container">
               <div class="navbar-translate">
-                  <a class="navbar-brand " href="/presentation.html">Nodemailer</a>
+                  <a class="navbar-brand " href="">Nodemailer</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="navbar-toggler-icon"></span>
@@ -63,7 +64,7 @@
         
         <div class="container">
           <h1 class=" text-center h1" > Send <div class="text-nowrap d-inline">E-mails</div>  from Node.js <div> – </div> <div class="text-nowrap d-inline">Easy as cake!</div> </h1>
-          <div class="row">
+          <div class="row btn-grp">
             <div class="col-12 col-lg-5 offset-lg-2 no-gutters" >
               <a href="#Form" class="btn-lg btn-block text-center mine-bg-green ">Send a Mail!</a>
             </div>
@@ -219,12 +220,16 @@
                 <form method="post" action="contact/send">
                   <div class="form-group bmd-form-group mb-0">
                     <label class="bmd-label-floating">To:</label>
-                    <input type="email" name="email" class="form-control">
-                  </div>     
+                    <input type="email" name="email" class="form-control" required>
+                  </div> 
                   <div class="form-group bmd-form-group mb-0">
-                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1"  placeholder="Compose..."></textarea>
+                    <label class="bmd-label-floating">Subject:</label>
+                    <input type="text" name="subject" class="form-control" required>
+                  </div> 
+                  <div class="form-group bmd-form-group mb-0">
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1"  placeholder="Compose..." required></textarea>
                   </div>               
-                  <button type="submit" class="btn btn-lg c4 newMessage mine-bg-green">Send Mail</button>
+                  <button type="submit" class="btn btn-lg c4 newMessage mine-bg-green">Send</button>
                 </form>
               </div>
             </div>
@@ -291,13 +296,12 @@
     new fullpage('#fullpage', {
       //options here
       autoScrolling:true,
-      scrollHorizontally: true,
+      
       navigation: true,
       anchors:['Home', 'About','Form','Contact'],
       navigationTooltips: ['Home', 'About','Form','Contact'],
       easing: 'constant',
-      scrollHorizontally: true,
-      loopBottom: true,
+      
       dragAndMove: true,
       continuousHorizontal: true,
      
