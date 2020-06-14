@@ -229,12 +229,16 @@
                   <div class="form-group bmd-form-group mb-0">
                     <textarea name="message" class="form-control" id="exampleFormControlTextarea1"  placeholder="Compose..." required></textarea>
                   </div>               
-                  <button type="submit" class="btn btn-lg c4 newMessage mine-bg-green" onclick="sendmail()">Send</button>
+                  <button type="submit" class="btn btn-lg c4 newMessage mine-bg-green" id="send" >Send</button>
                 </form>
               </div>
             </div>
           </div>
 
+          
+        </div>
+        <div class="sent">
+          Mail successfully sent
           
         </div>
         
@@ -368,7 +372,11 @@
 
       
   </script>
-
+  <script>
+    $(document).on("click", "#send", function() {
+      console.log("abc")
+    });
+  </script>
 
 
 </body>
