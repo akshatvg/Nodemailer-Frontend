@@ -46,7 +46,7 @@ app.post('/contact/send', function (req, res) {
 	var mailOptions = {
 		from: '"Nodemailer Bot" <nodemailer007@gmail.com>',
 		to: req.body.email,
-		subject: 'Message from Nodemailer',
+		subject: req.body.subject,
 		text: 'New Mail! Name: ' + req.body.name + 'Email: ' + req.body.email + 'Message: ' + req.body.message,
 		html: '<p>New Mail!</p><ul><li>' + req.body.message + '</li></ul>'
 	};
@@ -54,9 +54,11 @@ app.post('/contact/send', function (req, res) {
 	transporter.sendMail(mailOptions, function (error, info) {
 		if (error) {
 			console.log(error);
+			res.status(401);
 			res.redirect('/');
 		} else {
 			console.log('Message Sent: ' + info.response);
+			res.status(200);
 			res.redirect('/');
 		}
 	});
