@@ -54,16 +54,10 @@ app.post('/contact/send', function (req, res) {
 	transporter.sendMail(mailOptions, function (error, info) {
 		if (error) {
 			console.log(error);
-			res.redirect('/');
-			return res.json({
-				status: false
-			});
+			res.status(401).json("error")
 		} else {
 			console.log('Message Sent: ' + info.response);
-			res.redirect('/');
-			return res.json({
-				status: true
-			});
+			res.status(200).json("sent")
 		}
 	});
 });

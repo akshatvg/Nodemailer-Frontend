@@ -304,31 +304,85 @@ textarea{
     }
 }
 #contact{
+    padding-top: 5vh;
     background: black;
     height: 25vh !important;
     font-size: 20px;
+    padding-bottom: 5vh;
+}
+#contact img{
+    margin-bottom: 27px;
+}
+h4{
+    font-size: 4vmin;
+    font-weight: 500;
+}
+strong{
+    font-weight: 900;
+}
+h5{
+    font-size: 3.5vmin;
+    font-weight: 600;
+}
+h5:hover{
+    text-decoration: underline;
 }
 #contact a{
     color: white;
-    margin: 20% 2%;
+    
+}
+
+.social{
+    margin-left: 5vw;
+    
+}
+.social:hover{
+    
 }
 @media (min-width: 576px) {
     #contact{
         font-size: 25px;
+    }
+    .social{
+        margin-left: 3vw;
+    }
+    .mine-mt{
+        margin-top: 100px;
+    }
+    h4{
+        font-size: 3vmin;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 2.5vmin;
+        font-weight: 600;
     }
 }
 @media (min-width:768px) {
     #contact{
         font-size: 30px;
     }
+    .social{
+        margin-left: 2vw;
+    }
+    h4{
+        font-size: 2.5vmin;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 2vmin;
+        font-weight: 600;
+    }
 }
 @media (min-width:992px) {
     #contact{
         font-size: 35px;
     }
+   
 }
 @media (min-width:1200px) {
     #contact{
         font-size: 40px;
     }
+    
 }
