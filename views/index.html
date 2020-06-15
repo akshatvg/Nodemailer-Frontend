@@ -216,12 +216,16 @@
           <div class="row">
             <div class="col-12 col-md-10 offset-md-1">
               <h2><span class="animation">Send a mail</span></h2>
-              <div class="jumbotron o">
+              <div class="jumbotron o csv">
                 <form method="post" action="contact/send">
-                  <div class="form-group bmd-form-group mb-0">
+                  <div class="form-group bmd-form-group mb-0 ">
                     <label class="bmd-label-floating">To:</label>
-                    <input type="email" name="email" class="form-control" required>
+                    <input type="email" name="email" class="form-control " required>
                   </div> 
+                  <div class="form-group bmd-form-group mb-0 a" s>
+                    <input type="file" class="form-control" name="file" accept=".csv" required>
+                    <label class="bmd-label-floating" for="inputGroupFile01"><i class="fas fa-file-upload"></i> CSV</label>
+                  </div>
                   <div class="form-group bmd-form-group mb-0">
                     <label class="bmd-label-floating">Subject:</label>
                     <input type="text" name="subject" class="form-control" required>
@@ -375,6 +379,12 @@
   <script>
     $(document).on("click", "#send", function() {
       console.log("abc")
+    });
+    jQuery(function ($) {
+      var $inputs = $('input[name=email],input[name=file]');
+      $inputs.on('input', function () {
+          $inputs.not(this).prop('required', !$(this).val().length);
+      });
     });
   </script>
 
