@@ -40,17 +40,11 @@
 <img src="/screenshots/Screenshot 2020-06-02 at 1.18.07 AM.png" alt="Project Screenshots">
 <img src="/screenshots/Screenshot 2020-06-14 at 1.47.44 PM.png" alt="Project Screenshots">
 
-## Instructions to run
-
-```
-$ git clone https://github.com/CodeChefVIT/Nodemailer-Frontend.git
-$ cd Nodemailer-Frontend
-$ npm install
-$ node app.js
 ```
 
 ## Contributors
 - <a href="https://github.com/akshatvg">Akshat Gupta</a>
+- <a href="https://github.com/NavyaaSharma">Navyaa Sharma</a>
 - <a href="https://github.com/RishabhKodes">Rishabh Bhandhari</a>
 - <a href="https://github.com/shashtag">Shashwat Gupta</a>
 
