@@ -265,7 +265,7 @@ h3{
     background-color: rgba(0,0,0,0.05);
     padding: 0 1rem 1vh 1rem;
     padding-top: 1vh;
-
+    position: relative;
     height: 75vh;
     margin-bottom: 0;
 }
@@ -293,6 +293,30 @@ label{
 }
 .form-control:invalid {
     background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+}
+.csv{
+    position: relative;
+}
+.a{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1000000;
+    padding: 2px 5px;
+    width: 50px;
+}
+.form-group input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1000000;
 }
 textarea{
     height: 28vh !important;
