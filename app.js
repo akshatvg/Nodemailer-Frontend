@@ -1,68 +1,60 @@
-var express = require('express');
-var path = require('path');
-var bodyParser = require('body-parser');
-var nodemailer = require('nodemailer');
+const express=require('express')
+const nodemailer=require('nodemailer')
+const bodyParser=require('body-parser')
+const cors = require('cors')
+const app=express()
+ 
+require('dotenv').config()
+app.use(cors())
+app.use(bodyParser.json())
 
-var app = express();
+let transporter = nodemailer.createTransport({
+    host:'smtp.zoho.com',
+    port: 465,
+    auth: {
+      user: 'noreply@codechefvit.com', // your gmail address
+      pass: "Ccisbest123#"// your gmail password
+    }
+  });
 
-app.set('views', path.join(__dirname, 'views'));
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-	extended: false
-}));
-app.use(express.static(path.join(__dirname, 'public')));
-
-
-app.get('/', function (req, res) {
-	res.render('index');
+  app.post('/send/email',async function(req,res){
+    try{
+        var mailOptions
+        if(Array.isArray(req.body.to))
+        {
+            
+            mailOptions={
+                from : 'noreply@codechefvit.com',
+                bcc : req.body.to,
+                subject : req.body.subject,
+                html : req.body.message
+            }
+        }
+        else{
+            mailOptions={
+                from : 'noreply@codechefvit.com',
+                to : req.body.to,
+                subject : req.body.subject,
+                html : req.body.message
+            }
+        }
+        console.log(mailOptions)
+        transporter.sendMail(mailOptions, function(error, response){
+        if(error){
+                console.log(error)
+            res.status(401).json("error")
+        }else{
+                console.log("Message sent: ");
+            res.status(200).json("sent")
+            }
+        });
+    }
+    catch(e)
+    {
+        res.status(400).send()
+    }
 });
-
-app.get('/index', function (req, res) {
-	res.render('index');
-});
-
-
-app.get('/contact', function (req, res) {
-	res.render('contact');
-});
-
-app.post('/contact/send', function (req, res) {
-	var transporter = nodemailer.createTransport({
-		host: 'smtp.gmail.com',
-		port: 465,
-		secure: true, // use SSL
-		auth: {
-			user: 'nodemailer007@gmail.com', //enter email you want to send mail from,
-			pass: 'qddvvqqirwegpjsu' //enter passsword
-		},
-		tls: {
-			rejectUnauthorized: false,
-		}
-	});
-
-	var mailOptions = {
-		from: '"Nodemailer Bot" <nodemailer007@gmail.com>',
-		to: req.body.email,
-		subject: req.body.subject,
-		text: 'New Mail! Name: ' + req.body.name + 'Email: ' + req.body.email + 'Message: ' + req.body.message,
-		html: '<p>New Mail!</p><ul><li>' + req.body.message + '</li></ul>'
-	};
-
-	transporter.sendMail(mailOptions, function (error, info) {
-		if (error) {
-			console.log(error);
-			res.status(401);
-			res.redirect('/');
-		} else {
-			console.log('Message Sent: ' + info.response);
-			res.status(200);
-			res.redirect('/');
-		}
-	});
-});
-port = process.env.PORT || 3000;
-app.listen(port);
-console.log('Server is running on' + port);
+var port= process.env.PORT || 3000
+app.listen(port,()=>{
+    console.log('server running')
+})
