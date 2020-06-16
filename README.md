@@ -8,7 +8,7 @@
 
 ---
 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://nodemailerr.herokuapp.com)
+  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://nodemailer-cc.herokuapp.com/)
 
 
 
@@ -39,7 +39,6 @@
 <img src="/screenshots/Screenshot 2020-06-02 at 1.17.16 AM.png" alt="Project Screenshots">
 <img src="/screenshots/Screenshot 2020-06-02 at 1.18.07 AM.png" alt="Project Screenshots">
 <img src="/screenshots/Screenshot 2020-06-14 at 1.47.44 PM.png" alt="Project Screenshots">
-
 ```
 
 ## Contributors
@@ -47,6 +46,7 @@
 - <a href="https://github.com/NavyaaSharma">Navyaa Sharma</a>
 - <a href="https://github.com/RishabhKodes">Rishabh Bhandhari</a>
 - <a href="https://github.com/shashtag">Shashwat Gupta</a>
+
 
 ## License
 

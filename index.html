@@ -66,10 +66,10 @@
           <h1 class=" text-center h1" > Send <div class="text-nowrap d-inline">E-mails</div>  from Node.js <div> – </div> <div class="text-nowrap d-inline">Easy as cake!</div> </h1>
           <div class="row btn-grp">
             <div class="col-12 col-lg-5 offset-lg-2 no-gutters" >
-              <a href="#Form" class="btn btn-lg btn-block btn-secondary text-center mine-bg-green ">Send a Mail!</a>
+              <a href="#Form" class="btn btn-lg btn-block btn-secondary text-center mine-bg-green color-white" >Send a Mail!</a>
             </div>
             <div class="col-12 col-lg-3"  >
-              <a href="#About" class=" btn btn-lg btn-block btn-secondary text-center bg-transparent ">Know more</a>
+              <a href="#About" class=" btn btn-lg btn-block btn-secondary text-center bg-transparent color-white">Know more</a>
             </div>
           </div>
           
@@ -217,18 +217,18 @@
             <div class="col-12 col-md-10 offset-md-1">
               <h2><span class="animation">Mail!</span></h2>
               <div class="jumbotron o" >
-                <div class="row mt-md-5">
-                  <div class="col-12 col-md-6 mt-md-5">
-                    <button type="button" class="btn btn-secondary btn-lg p-md-5" id="frm-btn1">
-                      <div><i class="fas fa-user"></i></div>
-                      <h4><span class="animation">Send preronal mail</span></h4>
+                <div class="row mine-btn-mt">
+                  <div class="col-12 col-md-6 ">
+                    <button type="button" class="btn btn-secondary btn-lg pt-md-5 pb-md-5" id="frm-btn1">
+                      <div class="hvr-icon-grow"><i class="fas fa-user hvr-icon"></i></div>
+                      <h4>Send preronal mail</h4>
                     </button>
   
                   </div>
-                  <div class="col-12 col-md-6 mt-md-5 ">
-                    <button type="button" class="btn btn-secondary btn-lg p-md-5" id="frm-btn2">
-                      <div><i class="fas fa-users"></i></div>
-                      <h4><span class="animation">Send group mail</span></h4>
+                  <div class="col-12 col-md-6 ">
+                    <button type="button" class="btn btn-secondary btn-lg pt-md-5 pb-md-5" id="frm-btn2">
+                      <div class="hvr-icon-grow"><i class="fas fa-users hvr-icon"></i></div>
+                      <h4>Send group mail</h4>
                     </button>  
   
                   </div>
@@ -257,7 +257,7 @@
                   <div class="form-group bmd-form-group mb-0">
                     <textarea name="message" class="form-control" id="exampleFormControlTextarea1"  placeholder="Compose..." required></textarea>
                   </div>               
-                  <button type="submit" class="btn btn-lg c4 newMessage mine-bg-green"  >Send</button>
+                  <button type="submit" class="btn btn-lg c4 newMessage mine-bg-green"  onclick="sendmail()">Send</button>
                 </form>
               </div>
             </div>
@@ -420,13 +420,13 @@
     $(document).ready(function(){
       $('#frm-btn1').on("click",function(){
         var tl4 = gsap.timeline({defaults:{duration: 0.8}});
-        tl4.to('#frm-btns',{x:"175vh", display:"none"})
+        tl4.to('#frm-btns',{x:"175vh", display:"none"},"+=0.6")
           .to('#frm1',{display:"flex"})
           .from('#frm1',{opacity:0},"-=0.8")
       });
       $('#frm-btn2').on("click",function(){
         var tl5 = gsap.timeline({defaults:{duration: 0.8}});
-        tl5.to('#frm-btns',{x:"-175vh", display:"none"})
+        tl5.to('#frm-btns',{x:"-175vh", display:"none"},"+=0.6")
           .to('#frm2',{display:"flex"})
           .from('#frm2',{opacity:0},"-=0.8")
       });
