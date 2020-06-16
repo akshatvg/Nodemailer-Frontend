@@ -367,7 +367,7 @@ textarea{
     font-size: 20px;
     padding-bottom: 5vh;
 }
-#contact img{
+#contact-m img{
     margin-bottom: 27px;
 }
 h4{
@@ -384,7 +384,7 @@ h5{
 h5:hover{
     text-decoration: underline;
 }
-#contact a{
+#contact-m a{
     color: white;
     
 }
