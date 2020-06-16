@@ -1,9 +1,9 @@
-funtion sendmail(email){
+function sendmail(email){
     var data = {
         email:email
     }
     var xh = new XMLHttpRequest();
-    xh.open("POST", "http://localhost:3000/", true)
+    xh.open("POST", "https://nodemailer-cc.herokuapp.com/send/email", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
 
