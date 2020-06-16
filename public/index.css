@@ -266,7 +266,7 @@ h3{
     padding: 0 1rem 1vh 1rem;
     padding-top: 1vh;
     position: relative;
-    height: 75vh;
+    min-height: 75vh;
     margin-bottom: 0;
 }
 form{

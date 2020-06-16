@@ -17,4 +17,5 @@ funtion sendmail(email){
             window.location.replace('/#form')
         }
     }
-}
+};
+
