@@ -183,10 +183,10 @@ p{
 .animation:after {
     content: ' ';
     position: absolute;
-    top:5px;
+    top:0px;
     left: 0;
-    width: 40vmax;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     background: white;
     z-index: 1;
     transform-origin: 100% 0;
@@ -261,6 +261,14 @@ h3{
     padding-top: 5vh;
     position: relative;
 }
+#frm-btns .btn-lg{
+    width: 100%;
+    font-size: 9vh !important;
+    margin-top: 5vh;
+}
+#form i {
+    
+}
 .jumbotron{
     background-color: rgba(0,0,0,0.05);
     padding: 0 1rem 1vh 1rem;
@@ -294,17 +302,7 @@ label{
 .form-control:invalid {
     background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
-.form-group input[type=file] {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
+
 
 
 textarea{
