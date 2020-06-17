@@ -13,12 +13,12 @@ $(document).ready(function(){
         xh.send(JSON.stringify(data))
         xh.onload = function () {
             if (this.status == 200) {
-                alert("abc");
+                swal("Success!", "You mail was successfully sent", "success");
                 window.location.replace('/#form')
             }
             else if (this.status == 401) {
-                alert("xyz");
-                window.location.replace('/#form-m')
+                swal("Unsuccessful", "Please try again", "error");
+                window.location.replace('/#form')
             }
         }
     });
@@ -61,12 +61,12 @@ $(document).ready(function(){
         xh.send(JSON.stringify(data))
         xh.onload = function () {
             if (this.status == 200) {
-                alert("abc");
+                swal("Success!", "You mail was successfully sent", "success");
                 window.location.replace('/#form')
             }
             else if (this.status == 401) {
-                alert("xyz");
-                window.location.replace('/#form-m')
+                swal("Unsuccessful", "Please try again", "error");
+                window.location.replace('/#form')
             }
         }
             
