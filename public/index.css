@@ -261,6 +261,7 @@ h3{
     color: black;
     padding-top: 5vh;
     position: relative;
+    overflow: hidden;
 }
 #frm-btn1,#frm-btn3{
     position: absolute;
@@ -427,20 +428,7 @@ textarea{
         font-size: 7vmin !important;
     }
 }
-.sent{
-    position: absolute;
-    color: white;
-    content: "";
-    padding: 22px;
-    border-radius: 5px;
-    top: 1.5vmax;
-    font-size: 20px;
-    font-weight: 600;
-    right: 1.5vmax;
-    background-color: rgba(0,0,0,0.2);
-    opacity: 0;
 
-}
 #contact-m{
     padding-top: 5vh;
     background: black;
@@ -449,23 +437,32 @@ textarea{
     padding-bottom: 5vh;
 }
 #contact-m img{
-    margin-bottom: 27px;
+    margin-bottom: 6px;
+    width: 150px;
+    
+}
+.cc-logo{
+    width: 150px;
 }
 h4{
-    font-size: 4vmin;
+    font-size: 3.5vmin;
     font-weight: 500;
+    margin-bottom: 1.5vh;
 }
 strong{
     font-weight: 900;
 }
 h5{
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     font-weight: 600;
+    margin-bottom: 1.5vh;
+    margin-top: 0px;
 }
 h5:hover{
     text-decoration: underline;
 }
 #contact-m a{
+    
     color: white;
     
 }
@@ -478,8 +475,16 @@ h5:hover{
     
 }
 @media (min-width: 576px) {
-    #contact{
-        font-size: 25px;
+    #contact-m img{
+        margin-bottom: 27px;
+        width: 200px;
+        
+    }
+    .cc-logo{
+        width: 200px;
+    }
+    #contact-m{
+        font-size: 22px;
     }
     .social{
         margin-left: 3vw;
@@ -497,8 +502,8 @@ h5:hover{
     }
 }
 @media (min-width:768px) {
-    #contact{
-        font-size: 30px;
+    #contact-m{
+        font-size: 24px;
     }
     .social{
         margin-left: 2vw;
@@ -513,14 +518,14 @@ h5:hover{
     }
 }
 @media (min-width:992px) {
-    #contact{
-        font-size: 35px;
+    #contact-m{
+        font-size: 26px;
     }
    
 }
 @media (min-width:1200px) {
     #contact{
-        font-size: 40px;
+        font-size: 28px;
     }
     
 }

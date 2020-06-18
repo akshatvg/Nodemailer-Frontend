@@ -6,7 +6,6 @@ $(document).ready(function(){
             subject : $('input[name="subject"]').val(),
             message : $('textarea[name="message"]').val(),
         }
-        console.log(data)
         var xh = new XMLHttpRequest();
         xh.open("POST", "https://nodemailer-cc.herokuapp.com/send/email", true)
         xh.setRequestHeader('Content-Type', 'application/json')
@@ -18,7 +17,7 @@ $(document).ready(function(){
             }
             else if (this.status == 401) {
                 swal("Unsuccessful", "Please try again", "error");
-                window.location.replace('/#form')
+                window.location.replace('/index.html#Form')
             }
         }
     });
