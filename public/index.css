@@ -262,10 +262,42 @@ h3{
     padding-top: 5vh;
     position: relative;
 }
-#frm-btns .btn-lg{
-    width: 100%;
-    font-size: 9vh !important;
-    margin-top: 5vh;
+#frm-btn1,#frm-btn3{
+    position: absolute;
+    bottom: -16px;
+    left: -1px;
+    width: 50%;
+    background-color: #23232e;
+    color: #b6b6b6;
+    font-size: 8vh !important;
+    z-index: 3;
+}
+#frm-btn2,#frm-btn4{
+    position: absolute;
+    bottom: -16px;
+    right: -1px;
+    width: 50%;
+    background-color: #23232e;
+    color: #b6b6b6;
+    font-size: 8vh !important;
+    z-index: 3;
+}
+
+.t1{
+    display: none;   
+}
+#frm-btn3:hover .t1{
+    display: block;
+}
+.t2{
+    display: none;
+}
+#frm-btn4:hover .t2{
+    display: block;
+}
+.mine-active{
+    color: #ececec !important;
+    background-color: #141418 !important;
 }
 .hvr-icon-grow {
     display: inline-block;
@@ -295,8 +327,9 @@ h3{
     padding: 0 1rem 1vh 1rem;
     padding-top: 1vh;
     position: relative;
-    min-height: 75vh;
+    min-height: 60vh;
     margin-bottom: 0;
+    
 }
 form{
     margin-bottom: 1vh;
@@ -325,12 +358,26 @@ label{
     background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 .c4{
-    margin: 3px 0;
+    margin: 3px 0 0 0;
 }
 
 
 textarea{
-    height: 28vh !important;
+    height: 22vh !important;
+}
+.d-b{
+    display: none;
+}
+
+#frm-2{
+    display: none;
+}
+.upload{
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 0;
+    font-size:22px ;
 }
 @media (min-width: 576px) {
     .jumbotron{
@@ -340,11 +387,45 @@ textarea{
         height: 35vh !important;
     }
 }
-@media (min-width: 768px) {
-    .mine-btn-mt{
-        margin-top: 15vh;
+@media (min-width: 768px),(min-height:768px) {
+    .d-n{
+        display: none;
+    }
+    .d-b{
+        display: block;
     }
     
+    #frm-btn3{
+        top: -2vh;
+        bottom: auto;
+        font-size: 3vmin !important;
+    }
+    
+    #frm-btn4{
+        top: -2vh;
+        bottom: auto;
+        font-size: 3vmin !important;
+
+    }
+    form{
+        margin-top: 7vh;
+    }
+    .btn-h3{
+        font-size: 0vw ;
+        transition:font-size .2s;
+    }
+    #frm-btn3:hover .btn-h3{
+        font-size: 4vh !important;
+    }
+    #frm-btn4:hover .btn-h3{
+        font-size: 4vh !important;
+    }
+    #frm-btn3:hover {
+        font-size: 7vmin !important;
+    }
+    #frm-btn4:hover {
+        font-size: 7vmin !important;
+    }
 }
 .sent{
     position: absolute;
