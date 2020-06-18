@@ -95,8 +95,11 @@ body{
     font-weight: 500;
     line-height: 5.4vh;
     margin-top: 2vh;
-    padding: 3vh 0;
+    
     color: white;
+}
+.btn-pad{
+    padding: 3vh 0 !important;
 }
 a:hover, a:focus {
     color: white;
