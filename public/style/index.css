@@ -88,8 +88,6 @@ body{
     font-size: 8.5vh;
     font-family: 'Zilla Slab' !important; 
     margin: 0 -25px;
-
-    
 }
 .btn-lg{
     font-size: 5vh ;
@@ -475,9 +473,7 @@ h5:hover{
     margin-left: 5vw;
     
 }
-.social:hover{
-    
-}
+
 @media (min-width: 576px) {
     #contact-m img{
         margin-bottom: 27px;
