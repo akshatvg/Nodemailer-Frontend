@@ -87,6 +87,7 @@ body{
     font-weight: 600;
     font-size: 8.5vh;
     font-family: 'Zilla Slab' !important; 
+    margin: 0 -25px;
 
     
 }
@@ -108,7 +109,7 @@ a:hover, a:focus {
 .btn-grp{
     margin-bottom: 0;
 }
-@media (min-width: 576px), (min-height:576px) {
+@media (min-width: 576px) {
     .navbar{
         height: 9vmax;
     }

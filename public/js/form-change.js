@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
     $('#frm-btn1').on("click",function(){
       $('#frm-btn2').removeClass("mine-active")
       $('#frm-btn1').addClass("mine-active")
@@ -35,4 +35,3 @@ $(document).ready(function(){
         .to('#frm-2',{display:"block"})
         .to('#frm-2',{opacity:1},"-=0.3")
     });
-  });
