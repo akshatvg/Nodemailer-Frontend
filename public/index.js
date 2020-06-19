@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#send1').on('click', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         var data = {
             to : $('input[name="email"]').val(),
             subject : $('input[name="subject"]').val(),
@@ -24,7 +24,7 @@ $(document).ready(function(){
     
 
     $('#send2').on("click",function(e){
-		e.preventDefault();
+		// e.preventDefault();
 		$('#file').parse({
 			config: {
 				delimiter: "auto",
