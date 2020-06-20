@@ -44,7 +44,7 @@
 
 
   <!-- Bootstrap core CSS -->
-  <link href="/public/style/material-kit.min.css" rel="stylesheet" />
+  <link href="/public/style/material-kit.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
   
@@ -280,7 +280,7 @@
                   <h4 class="t2">Broadcast your message</h4>
                 </button>
 
-                <form id="frm-1">
+                <form id="frm-1" method="post" >
                   <div class="form-group bmd-form-group mb-0 position-relative">
                     <label class="bmd-label-floating">To:</label>
                     <input type="email" name="email" class="form-control " required>
@@ -301,7 +301,7 @@
 
 
 
-                <form id="frm-2">
+                <form id="frm-2" method="'post'">
                   <div class="form-group form-file-upload form-file-simple mb-0 position-relative">
                     <input type="text" class="form-control inputFileVisible" placeholder="Click here to upload CSV file..." required>
                     <input type="file" class="inputFileHidden" accept=".csv" id="file" required>
