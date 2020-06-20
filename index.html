@@ -325,20 +325,20 @@
       afterLoad: function(origin, destination, direction){
         var loadedSection = this;
         if(destination.index == 0){
-        	var tl1 = gsap.timeline({defaults:{duration: 0.8}});
-            tl1.from("#landing",{duration:0.8, opacity: 0.9})
-              .from(".h1", {y:-100, opacity: 0}, "-=.4")
-              .from(".btn-stag", {y:50,stagger: 0.4, opacity: 0})
-              .from("#fp-nav",{x:50, opacity: 0}, "-=.4");        
+        	var tl1 = gsap.timeline({defaults:{duration: 0.6}});
+            tl1.from("#landing",{duration:0.6, opacity: 0.9})
+              .from(".h1", {y:-100, opacity: 0}, "-=.3")
+              .from(".btn-stag", {y:50,stagger: 0.3, opacity: 0})
+              .from("#fp-nav",{x:50, opacity: 0}, "-=.3");        
         }
         if(destination.index == 1){
-          var tl2 = gsap.timeline({defaults:{duration: 0.8}});
+          var tl2 = gsap.timeline({defaults:{duration: 0.6}});
               tl2.to(".about-title", {y:"10vh", opacity: 1,ease: "bounce.out"}, "")
-                 .to(".card",{duration: 1.6,x:"-99.3vw",ease:"elastic.out(1,0.75)"},"-=0.4")
+                 .to(".card",{duration: 1.6,x:"-99.3vw",ease:"elastic.out(1,0.75)"},"-=0.3")
         }
         if(destination.index == 2){
           var rule = CSSRulePlugin.getRule(".animation:after");
-          var tl3 = gsap.timeline({defaults:{duration: 0.8}});
+          var tl3 = gsap.timeline({defaults:{duration: 0.4}});
             tl3.to(rule, {cssRule: {scaleY: 0}} )
         }
 	    },
