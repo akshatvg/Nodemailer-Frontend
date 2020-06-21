@@ -1,0 +1,25 @@
+{
+  "name": "Nodemailer-Frontend",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><a href=\"http://www.codechefvit.com\" target=\"_blank\"><img src=\"https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo-3.png\" title=\"CodeChef-VIT\" alt=\"Codechef-VIT\"></a> </p>",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "nodemailer": "^6.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashtag/Nodemailer-Frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashtag/Nodemailer-Frontend/issues"
+  },
+  "homepage": "https://github.com/shashtag/Nodemailer-Frontend#readme"
+}
