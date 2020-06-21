@@ -40,6 +40,7 @@ body{
     padding: 5.5vh 0;
     background-repeat: no-repeat;
     position: relative;
+    opacity: 0.9;
 }
 .btn-stag{
     opacity: 0;
@@ -269,7 +270,8 @@ h3{
     color: black;
     padding-top: 5vh;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+
 }
 #frm-btn1,#frm-btn3{
     position: absolute;
@@ -336,8 +338,9 @@ h3{
     background-color: rgba(0,0,0,0.05);
     padding: 0 1rem 1vh 1rem;
     padding-top: 1vh;
+    padding-bottom: 1px;
     position: relative;
-    min-height: 60vh;
+    min-height: 70vh;
     margin-bottom: 0;
     
 }
@@ -373,7 +376,12 @@ label{
 
 
 textarea{
-    height: 22vh !important;
+    height: 24vh !important;
+    padding-top: 0.3rem !important;
+}
+.bp {
+    padding: 1rem 2rem !important;
+    
 }
 .d-b{
     display: none;
@@ -390,11 +398,8 @@ textarea{
     font-size:22px ;
 }
 @media (min-width: 576px) {
-    .jumbotron{
-        height: 72vh;
-    }
     textarea{
-        height: 35vh !important;
+        height: 30vh !important;
     }
 }
 @media (min-width: 768px) {
@@ -418,7 +423,7 @@ textarea{
 
     }
     form{
-        margin-top: 7vh;
+        margin-top: 9vh;
     }
     .btn-h3{
         font-size: 0vw ;
