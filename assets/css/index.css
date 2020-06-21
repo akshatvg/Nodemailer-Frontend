@@ -433,6 +433,46 @@ textarea{
         font-size: 7vmin !important;
     }
 }
+@media (min-height: 880px){
+    .d-n{
+        display: none;
+    }
+    .d-b{
+        display: block;
+    }
+    
+    #frm-btn3{
+        top: -2vh;
+        bottom: auto;
+        font-size: 3vmin !important;
+    }
+    
+    #frm-btn4{
+        top: -2vh;
+        bottom: auto;
+        font-size: 3vmin !important;
+
+    }
+    form{
+        margin-top: 7vh;
+    }
+    .btn-h3{
+        font-size: 0vw ;
+        transition:font-size .2s;
+    }
+    #frm-btn3:hover .btn-h3{
+        font-size: 4vmin !important;
+    }
+    #frm-btn4:hover .btn-h3{
+        font-size: 4vmin !important;
+    }
+    #frm-btn3:hover {
+        font-size: 7vmin !important;
+    }
+    #frm-btn4:hover {
+        font-size: 7vmin !important;
+    }
+}
 
 #contact-m{
     padding-top: 5vh;
