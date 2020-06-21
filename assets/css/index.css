@@ -37,7 +37,7 @@ body{
     background-position: bottom;
     background-blend-mode:multiply;
     color: white;
-    padding: 5.5vh 0;
+    padding: 5.5vh 0 0 0;
     background-repeat: no-repeat;
     position: relative;
     opacity: 0.9;
