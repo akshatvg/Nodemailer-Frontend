@@ -525,9 +525,7 @@ h5:hover{
     margin-left: 5vw;
     
 }
-.social:hover{
-    
-}
+
 @media (min-width: 576px) {
     #contact-m img{
         margin-bottom: 27px;
@@ -585,7 +583,7 @@ h5:hover{
         margin-top: 100px;
     }
 }
-}
+
 @media (min-width:1200px) {
     #contact{
         font-size: 28px;
