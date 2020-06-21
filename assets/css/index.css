@@ -37,14 +37,19 @@ body{
     background-position: bottom;
     background-blend-mode:multiply;
     color: white;
-    padding: 5.5vh 0;
+    padding: 5.5vh 0 0 0;
     background-repeat: no-repeat;
     position: relative;
+    opacity: 0.9;
 }
-
-
+.btn-stag{
+    opacity: 0;
+}
+#fp-nav.fp-right {
+    right: -30px;
+}
 .navbar{
-    height: 11vmax;
+    height: 9vmax;
     color: white;
     
 }
@@ -265,7 +270,8 @@ h3{
     color: black;
     padding-top: 5vh;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+
 }
 #frm-btn1,#frm-btn3{
     position: absolute;
@@ -323,7 +329,8 @@ h3{
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.hvr-icon-grow:hover .hvr-icon, .hvr-icon-grow:focus .hvr-icon, .hvr-icon-grow:active .hvr-icon {
+.hvr-icon-grow:hover .hvr-icon, .hvr-icon-grow:focus .hvr-icon, .hvr-icon-grow:active .hvr-icon,
+.mine-active .hvr-icon {
     -webkit-transform: scale(1.3) translateZ(0);
     transform: scale(1.3) translateZ(0);
 }
@@ -331,8 +338,9 @@ h3{
     background-color: rgba(0,0,0,0.05);
     padding: 0 1rem 1vh 1rem;
     padding-top: 1vh;
+    padding-bottom: 1px;
     position: relative;
-    min-height: 60vh;
+    min-height: 70vh;
     margin-bottom: 0;
     
 }
@@ -368,7 +376,12 @@ label{
 
 
 textarea{
-    height: 22vh !important;
+    height: 24vh !important;
+    padding-top: 0.3rem !important;
+}
+.bp {
+    padding: 1rem 2rem !important;
+    
 }
 .d-b{
     display: none;
@@ -385,14 +398,51 @@ textarea{
     font-size:22px ;
 }
 @media (min-width: 576px) {
-    .jumbotron{
-        height: 72vh;
-    }
     textarea{
-        height: 35vh !important;
+        height: 30vh !important;
     }
 }
-@media (min-width: 768px),(min-height:768px) {
+@media (min-width: 768px) {
+    .d-n{
+        display: none;
+    }
+    .d-b{
+        display: block;
+    }
+    
+    #frm-btn3{
+        top: -2vh;
+        bottom: auto;
+        font-size: 3vmin !important;
+    }
+    
+    #frm-btn4{
+        top: -2vh;
+        bottom: auto;
+        font-size: 3vmin !important;
+
+    }
+    form{
+        margin-top: 9vh;
+    }
+    .btn-h3{
+        font-size: 0vw ;
+        transition:font-size .2s;
+    }
+    #frm-btn3:hover .btn-h3{
+        font-size: 4vmin !important;
+    }
+    #frm-btn4:hover .btn-h3{
+        font-size: 4vmin !important;
+    }
+    #frm-btn3:hover {
+        font-size: 7vmin !important;
+    }
+    #frm-btn4:hover {
+        font-size: 7vmin !important;
+    }
+}
+@media (min-height: 880px){
     .d-n{
         display: none;
     }
@@ -420,10 +470,10 @@ textarea{
         transition:font-size .2s;
     }
     #frm-btn3:hover .btn-h3{
-        font-size: 4vh !important;
+        font-size: 4vmin !important;
     }
     #frm-btn4:hover .btn-h3{
-        font-size: 4vh !important;
+        font-size: 4vmin !important;
     }
     #frm-btn3:hover {
         font-size: 7vmin !important;
@@ -449,7 +499,7 @@ textarea{
     width: 150px;
 }
 h4{
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     font-weight: 500;
     margin-bottom: 1.5vh;
 }
@@ -457,7 +507,7 @@ strong{
     font-weight: 900;
 }
 h5{
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     font-weight: 600;
     margin-bottom: 1.5vh;
     margin-top: 0px;
@@ -475,9 +525,7 @@ h5:hover{
     margin-left: 5vw;
     
 }
-.social:hover{
-    
-}
+
 @media (min-width: 576px) {
     #contact-m img{
         margin-bottom: 27px;
@@ -496,12 +544,15 @@ h5:hover{
     .mine-mt{
         margin-top: 100px;
     }
+    .mine-mt2{
+        margin-top: 10px;
+    }
     h4{
-        font-size: 3vmin;
+        font-size: 3.5vmin;
         font-weight: 500;
     }
     h5{
-        font-size: 2.5vmin;
+        font-size: 3vmin;
         font-weight: 600;
     }
 }
@@ -512,21 +563,20 @@ h5:hover{
     .social{
         margin-left: 2vw;
     }
-    h4{
-        font-size: 2.5vmin;
-        font-weight: 500;
-    }
-    h5{
-        font-size: 2vmin;
-        font-weight: 600;
+    
+    .mine-mt2{
+        margin-top: 30px;
     }
 }
 @media (min-width:992px) {
     #contact-m{
         font-size: 26px;
     }
-   
+    .mine-mt2{
+        margin-top: 100px;
+    }
 }
+
 @media (min-width:1200px) {
     #contact{
         font-size: 28px;

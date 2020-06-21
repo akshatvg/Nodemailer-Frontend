@@ -31,6 +31,8 @@
   <meta name="twitter:creator" content="@shashtag">
   <meta itemprop="name" content="Nodemailer-Frontend">
   <meta itemprop="description" content="Send email from Nodemailer.">
+  <link rel="icon" type="image/jpg" href="./assets/img/title.jpg" />
+  <link rel="apple-touch-icon" type="image/jpg" href="./assets/img/title.jpg" />
   <title>Nodemailer</title>
   <link href="/assets/css/material-kit.min.css" rel="stylesheet"  />
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet" />    
@@ -73,13 +75,13 @@
           </div>
         </nav>
         <div class="container">
-          <h1 class=" text-center h1" > <div class="text-nowrap d-inline">Send E-mails</div>  from Node.js <div> – </div> <div class="text-nowrap d-inline">Easy as cake!</div> </h1>
-          <div class="row btn-grp">
+          <h1 class=" text-center h1" style="margin-top: -100px !important; padding-bottom: 100px; opacity: 0;" > <div class="text-nowrap d-inline">Send E-mails</div>  from Node.js <div> – </div> <div class="text-nowrap d-inline">Easy as cake!</div> </h1>
+          <div class="row btn-grp" style="margin-top: 40px;">
             <div class="col-12 col-lg-5 offset-lg-2 " >
-              <a href="#Form" class="btn btn-lg btn-stag btn-block btn-secondary text-center mine-bg-green color-white btn-pad" >Send a Mail!</a>
+              <a href="#Form" class="btn btn-lg btn-stag btn-block btn-secondary text-center mine-bg-green color-white btn-pad" style=" opacity: 0;">Send a Mail!</a>
             </div>
             <div class="col-12 col-lg-3"  >
-              <a href="#About" class=" btn btn-lg btn-stag btn-block btn-secondary text-center bg-transparent color-white btn-pad">Know more</a>
+              <a href="#About" class=" btn btn-lg btn-stag btn-block btn-secondary text-center bg-transparent color-white btn-pad" style=" opacity: 0;">Know more</a>
             </div>
           </div>
         </div>
@@ -224,7 +226,7 @@
                 <button type="button" class="btn btn-secondary btn-lg p-2 frm-btn d-b" id="frm-btn4">
                   <div class="hvr-icon-grow"><i class="fas fa-users hvr-icon"></i></div>
                   <h3 class="btn-h3">Group mail</h3>
-                  <h4 class="t2">Broadcast your message</h4>
+                  <h4 class="t2">Broadcast message</h4>
                 </button>
                 <form id="frm-1">
                   <div class="form-group bmd-form-group mb-0 position-relative">
@@ -241,7 +243,7 @@
                   <div class="form-group bmd-form-group mb-0">
                     <textarea name="message" class="form-control" id="smsg"  placeholder="Compose..." required></textarea>
                   </div>            
-                  <button type="submit" class="btn btn-lg c4 btn-secondary mine-bg-green color-white" id="send1" style="margin-bottom: 1px;">Send</button>
+                  <button type="submit" class="btn btn-lg c4 btn-secondary mine-bg-green color-white bp" id="send1" style="margin-bottom: 1px !important;">Send</button>
                 </form>
                 <form id="frm-2">
                   <div class="form-group form-file-upload form-file-simple mb-0 position-relative">
@@ -258,7 +260,7 @@
                   <div class="form-group bmd-form-group mb-0">
                     <textarea name="message1" class="form-control" id="exampleFormControlTextarea1"  placeholder="Compose..." required></textarea>
                   </div>               
-                  <button type="submit" class="btn btn-lg c4 btn-secondary newMessage mine-bg-green color-white" id="send2" style="margin-bottom: 1px;" >Send</button>
+                  <button type="submit" class="btn btn-lg c4 btn-secondary mine-bg-green color-white bp" id="send2" style="margin-bottom: 1px;" >Send</button>
                 </form>
               </div>
             </div>
@@ -284,7 +286,7 @@
                     <a href="https://github.com/CodeChefVIT" rel="noreferrer" target="_blank"><h5>And many more...</h5></a>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 offset-sm-6 offset-lg-0 mine-mt">
+            <div class="col-12 col-sm-6 col-lg-4 offset-sm-6 offset-lg-0 mine-mt2">
                 <h4 class="d-flex justify-content-end text-nowrap"> <strong>Find More On:</strong> </h4>
                 <div class="d-flex justify-content-end">
                     <a class="social" href="https://www.twitter.com/codechefvit" rel="noreferrer" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -385,20 +387,22 @@
         var loadedSection = this;
         if(destination.index == 0){
         	var tl1 = gsap.timeline({defaults:{duration: 0.6}});
-            tl1.from("#landing",{duration:0.6, opacity: 0.9})
-              .from(".h1", {y:-100, opacity: 0}, "-=.3")
-              .from(".btn-stag", {y:50,stagger: 0.3, opacity: 0})
-              .from("#fp-nav",{x:50, opacity: 0}, "-=.3");        
+            tl1.to("#landing",{ opacity: 1})
+              .to(".h1", {y:100, opacity: 1}, "-=.3")
+              .to(".btn-stag", {y:-40,stagger: 0.3, opacity: 1})
+              .to("#fp-nav",{x:-50, opacity: 1}, "-=.3");        
         }
         if(destination.index == 1){
           var tl2 = gsap.timeline({defaults:{duration: 0.6}});
               tl2.to(".about-title", {y:"10vh", opacity: 1,ease: "bounce.out"}, "")
                  .to(".card",{duration: 1.6,x:"-99.3vw",ease:"elastic.out(1,0.75)"},"-=0.3")
+                 .to("#fp-nav",{x:-50, opacity: 1}, "-=.3");   
         }
         if(destination.index == 2){
           var rule = CSSRulePlugin.getRule(".animation:after");
           var tl3 = gsap.timeline({defaults:{duration: 0.4}});
             tl3.to(rule, {cssRule: {scaleY: 0}} )
+            .to("#fp-nav",{x:-50, opacity: 1}, "-=.3"); 
         }
 	    },
     }); 
