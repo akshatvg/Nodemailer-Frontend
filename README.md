@@ -44,7 +44,7 @@
 ## Contributors
 - <a href="https://github.com/akshatvg">Akshat Gupta</a>
 - <a href="https://github.com/NavyaaSharma">Navyaa Sharma</a>
-- <a href="https://github.com/RishabhKodes">Rishabh Bhandhari</a>
+- <a href="https://github.com/RishabhKodes">Rishabh Bhandari</a>
 - <a href="https://github.com/shashtag">Shashwat Gupta</a>
 
 
