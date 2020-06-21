@@ -41,8 +41,12 @@ body{
     background-repeat: no-repeat;
     position: relative;
 }
-
-
+.btn-stag{
+    opacity: 0;
+}
+#fp-nav.fp-right {
+    right: -30px;
+}
 .navbar{
     height: 11vmax;
     color: white;
