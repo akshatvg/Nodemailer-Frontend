@@ -2,11 +2,20 @@ const express=require('express')
 const nodemailer=require('nodemailer')
 const bodyParser=require('body-parser')
 const cors = require('cors')
+const rateLimit = require('express-rate-limit')
 const app=express()
  
 require('dotenv').config()
 app.use(cors())
 app.use(bodyParser.json())
+
+var limiter = new rateLimit({
+    windowMs:15*60*1000,
+    max:100,
+    delayMs:0,
+    message:"Too many requests created from this IP, please try again after an hour"
+})
+app.use(limiter)
 
 let transporter = nodemailer.createTransport({
     host:'smtp.zoho.com',
