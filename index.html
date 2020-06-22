@@ -36,7 +36,6 @@
   <title>Nodemailer</title>
   <link href="/assets/css/material-kit.min.css" rel="stylesheet"  />
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet" />    
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/966d44bd01.js" crossorigin="anonymous" rel="preload" async></script>
   <script src="https://kit.fontawesome.com/966d44bd01.js" crossorigin="anonymous" rel="preconnect" async></script>
   <script src="https://kit.fontawesome.com/966d44bd01.js" crossorigin="anonymous" rel="dns-prefetch" async></script>
@@ -59,10 +58,10 @@
               <div class="collapse navbar-collapse justify-content-end">
                   <ul class="navbar-nav" >
                       <li class="nav-item active">
-                          <a href="#Home" class="nav-link">Home</a>
+                          <a href="#Home-m" class="nav-link">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#About" class="nav-link">About</a>
+                          <a href="#about-m" class="nav-link">About</a>
                       </li>
                       <li class="nav-item">
                         <a href="#Form" class="nav-link">Mail</a>
@@ -314,41 +313,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" ></script>
   <script src="./assets/js/bootstrap-material-design.min.js" type="text/javascript" ></script>
   <script src="./assets/js/material-kit.min.js" type="text/javascript" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/CSSRulePlugin.min.js" async></script>
   <!-- <script src="assets/js/mail.min.js" type="text/javascript" defer></script> -->
   <script src="assets/js/papaparse.min.js" defer></script>
   <script src="assets/js/form-change.min.js" defer></script>
   <script src="assets/js/form.min.js" defer></script>
-  <script>
-    new fullpage('#fullpage', {
-      autoScrolling:true,
-      navigation: true,
-      anchors:['Home', 'About','Form','Contact'],
-      navigationTooltips: ['Home', 'About','Form','Contact'],
-      afterLoad: function(origin, destination, direction){
-        var loadedSection = this;
-        if(destination.index == 0){
-        	var tl1 = gsap.timeline({defaults:{duration: 0.6}});
-            tl1.to("#landing",{ opacity: 1})
-              .to(".h1", {y:100, opacity: 1}, "-=.3")
-              .to(".btn-stag", {y:-40,stagger: 0.3, opacity: 1})
-              .to("#fp-nav",{x:-50, opacity: 1}, "-=.3");        
-        }
-        if(destination.index == 1){
-          var tl2 = gsap.timeline({defaults:{duration: 0.6}});
-              tl2.to(".about-title", {y:"10vh", opacity: 1,ease: "bounce.out"}, "")
-                 .to(".card",{duration: 1.6,x:"-99.3vw",ease:"elastic.out(1,0.75)"},"-=0.3")
-                 .to("#fp-nav",{x:-50, opacity: 1}, "-=.3");   
-        }
-        if(destination.index == 2){
-          var rule = CSSRulePlugin.getRule(".animation:after");
-          var tl3 = gsap.timeline({defaults:{duration: 0.4}});
-            tl3.to(rule, {cssRule: {scaleY: 0}} )
-            .to("#fp-nav",{x:-50, opacity: 1}, "-=.3"); 
-        }
-	    },
-    }); 
-  </script>
+  
 </body>
 </html>
