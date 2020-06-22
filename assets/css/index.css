@@ -130,7 +130,7 @@ a:hover, a:focus {
     .navbar-brand {
         box-shadow: 16px 8px;
         font-size: 40px !important;
-        margin-top: -5vmin;
+        margin-top: -3vmin;
     }
     .btn-lg{
         font-size: 4.5vh ;
