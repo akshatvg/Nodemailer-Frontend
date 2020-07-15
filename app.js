@@ -7,7 +7,7 @@ const app=express()
  
 require('dotenv').config()
 app.use(cors())
-app.use(bodyParser.json())
+app.use(bodyParser.json({limit: '1mb'}));
 
 var limiter = new rateLimit({
     windowMs:15*60*1000,
