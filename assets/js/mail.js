@@ -11,13 +11,12 @@ function email1()
     xh.send(JSON.stringify(data))
     xh.onload = function () {
         if (this.status == 200) {
-            swal("Success!", "You mail was successfully sent", "success");
-            // setTimeout(window.location.replace('index.html'),50000);
-            
+            swal("Success!", "You mail was successfully sent", "success",{timer:10000});
+            window.location.replace('index.html')
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
-            // setTimeout(window.location.replace('index.html'),50000);
+            window.location.replace('index.html')
         }
     }
 };
@@ -42,13 +41,12 @@ function sendmail2(results) {
     xh.send(JSON.stringify(data))
     xh.onload = function () {
         if (this.status == 200) {
-            swal("Success!", "You mail was successfully sent", "success")
-            .then(window.location.replace('index.html'))
-            // setTimeout(window.location.replace('index.html'),50000);
+            swal("Success!", "You mail was successfully sent", "success");
+            window.location.replace('index.html')
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
-            // setTimeout(window.location.replace('index.html'),50000);
+            window.location.replace('index.html')
         }
     }
             
