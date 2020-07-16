@@ -18,7 +18,9 @@ function email1()
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
-            window.location.replace('index.html')
+            window.setTimeout(function(){ 
+                location.reload();
+            } ,3000);
         }
     }
 };
@@ -44,11 +46,15 @@ function sendmail2(results) {
     xh.onload = function () {
         if (this.status == 200) {
             swal("Success!", "You mail was successfully sent", "success");
-            window.location.replace('index.html')
+            window.setTimeout(function(){ 
+                location.reload();
+            } ,3000);
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
-            window.location.replace('index.html')
+            window.setTimeout(function(){ 
+                location.reload();
+            } ,3000);
         }
     }
             
