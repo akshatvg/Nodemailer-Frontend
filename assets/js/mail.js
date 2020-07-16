@@ -42,7 +42,8 @@ function sendmail2(results) {
     xh.send(JSON.stringify(data))
     xh.onload = function () {
         if (this.status == 200) {
-            swal("Success!", "You mail was successfully sent", "success");
+            swal("Success!", "You mail was successfully sent", "success")
+            .then(window.location.replace('index.html'))
             // setTimeout(window.location.replace('index.html'),50000);
         }
         else{
