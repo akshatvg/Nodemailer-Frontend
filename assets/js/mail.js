@@ -12,7 +12,8 @@ function email1()
     xh.onload = function () {
         if (this.status == 200) {
             swal("Success!", "You mail was successfully sent", "success");
-            window.location.replace('index.html')
+            setTimeout(window.location.replace('index.html'),5000);
+            
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
