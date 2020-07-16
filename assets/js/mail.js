@@ -12,12 +12,12 @@ function email1()
     xh.onload = function () {
         if (this.status == 200) {
             swal("Success!", "You mail was successfully sent", "success");
-            setTimeout(window.location.replace('index.html'),50000);
+            // setTimeout(window.location.replace('index.html'),50000);
             
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
-            setTimeout(window.location.replace('index.html'),50000);
+            // setTimeout(window.location.replace('index.html'),50000);
         }
     }
 };
@@ -47,7 +47,7 @@ function sendmail2(results) {
         }
         else{
             swal("Unsuccessful", "Please try again", "error");
-            setTimeout(window.location.replace('index.html'),50000);
+            // setTimeout(window.location.replace('index.html'),50000);
         }
     }
             
