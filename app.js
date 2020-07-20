@@ -18,7 +18,7 @@ var limiter = new rateLimit({
 app.use(limiter)
 
 let transporter = nodemailer.createTransport({
-    host:'smtp.zoho.com',
+    host:'smtp.gmail.com',
     port: 465,
     auth: {
       user: 'nodemailerfrontend@gmail.com', // your gmail address
