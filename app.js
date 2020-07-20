@@ -21,7 +21,7 @@ let transporter = nodemailer.createTransport({
     host:'smtp.zoho.com',
     port: 465,
     auth: {
-      user: 'noreply@codechefvit.com', // your gmail address
+      user: 'nodemailerfrontend@gmail.com', // your gmail address
       pass: process.env.password// your gmail password
     }
   });
@@ -33,7 +33,7 @@ let transporter = nodemailer.createTransport({
         {
             
             mailOptions={
-                from : 'noreply@codechefvit.com',
+                from : 'nodemailerfrontend@gmail.com',
                 bcc : req.body.to,
                 subject : req.body.subject,
                 html : req.body.message
@@ -41,7 +41,7 @@ let transporter = nodemailer.createTransport({
         }
         else{
             mailOptions={
-                from : 'noreply@codechefvit.com',
+                from : 'nodemailerfrontend@gmail.com',
                 to : req.body.to,
                 subject : req.body.subject,
                 html : req.body.message
