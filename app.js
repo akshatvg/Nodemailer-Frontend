@@ -18,10 +18,10 @@ var limiter = new rateLimit({
 app.use(limiter)
 
 let transporter = nodemailer.createTransport({
-    host:'smtp.gmail.com',
+    host:'smtp.zoho.com',
     port: 465,
     auth: {
-      user: 'nodemailerfrontend@gmail.com', // your gmail address
+      user: 'noreply@codechefvit.com', // your gmail address
       pass: process.env.password// your gmail password
     }
   });
@@ -33,7 +33,7 @@ let transporter = nodemailer.createTransport({
         {
             
             mailOptions={
-                from : 'nodemailerfrontend@gmail.com',
+                from : 'noreply@codechefvit.com',
                 bcc : req.body.to,
                 subject : req.body.subject,
                 html : req.body.message
@@ -41,7 +41,7 @@ let transporter = nodemailer.createTransport({
         }
         else{
             mailOptions={
-                from : 'nodemailerfrontend@gmail.com',
+                from : 'noreply@codechefvit.com',
                 to : req.body.to,
                 subject : req.body.subject,
                 html : req.body.message
