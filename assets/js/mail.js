@@ -6,7 +6,7 @@ function email1()
         message : document.getElementById('smsg').value,
     }
     var xh = new XMLHttpRequest();
-    xh.open("POST", "https://nodemailer-cc.herokuapp.com/send/email", true)
+    xh.open("POST", "https://nodemailer-cc-main.herokuapp.com/send/email", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
     xh.onload = function () {
@@ -40,7 +40,7 @@ function sendmail2(results) {
     }
     // console.log(data)
     var xh = new XMLHttpRequest();
-    xh.open("POST", "https://nodemailer-cc.herokuapp.com/send/email", true)
+    xh.open("POST", "https://nodemailer-cc-main.herokuapp.com/send/email", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
     xh.onload = function () {
